@@ -1,0 +1,22 @@
+{
+  "trigger": "find_record",
+  "actions": [
+    {
+      "type": "send_webhook",
+      "webhook_url": "",
+      "filters": []
+    },
+    {
+      "type": "send_webhook",
+      "webhook_url": "",
+      "filters": []
+    }
+  ],
+  "filters": [],
+  "base_key": "",
+  "table_name": "",
+  "api_key": "",
+  "field_name": "Email",
+  "text_to_find": "hamza",
+  "name": "findbytxt"
+}

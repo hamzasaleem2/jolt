@@ -1,0 +1,35 @@
+{
+  "trigger": "airtable_record_updated",
+  "actions": [
+    {
+      "type": "send_webhook",
+      "webhook_url": "",
+      "filters": [],
+      "output_name": "first_action_output"
+    },
+    {
+      "type": "send_webhook",
+      "webhook_url": "",
+      "filters": []
+    },
+    {
+      "type": "send_webhook",
+      "webhook_url": "",
+      "filters": [],
+      "input_from": ["first_action_output"]
+    }
+  ],
+  "filters": [
+    {
+      "field_name": "Name",
+      "operator": "contains",
+      "value": "sa"
+    }
+  ],
+  "base_key": "",
+  "table_name": "",
+  "api_key": "",
+  "field_name": null,
+  "text_to_find": null,
+  "name": "newupdate"
+}
